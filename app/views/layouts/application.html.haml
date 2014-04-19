@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 !!!
-%html{:xmlns => 'http://www.w3.org/1999/xhtml', :"xml:lang" => 'en', :lang => 'en' }
+%html{"ng-app"=> true, :xmlns => 'http://www.w3.org/1999/xhtml', :"xml:lang" => 'en', :lang => 'en' }
    = render 'shared/head' 
-%body.app
+%body.app{"ng-controller" => "HomeCtrl"}
 

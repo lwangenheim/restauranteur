@@ -6,7 +6,7 @@
 @restauranteur.config(['routeProvider', ($routeProvider) -> 
   $routeProvider.
     otherwise({
-      templateUrl: '../templates/home.html',
+      templateUrl: '../views/templates/home.html',
       controller: 'HomeCtrl'
     })
 ])
