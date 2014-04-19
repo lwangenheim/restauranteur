@@ -1,0 +1,9 @@
+%head
+  %meta{:"http-equiv" => 'Content-Type', :content => 'text/html; charset=utf-8'}
+    %title= content_for(:meta_title).blank? ? "Restauranteur" : "#{content_for(:meta_title)} | Restauranteur"
+    = stylesheet_link_tag  'application.css', media: "all"
+    = javascript_include_tag 'application'
+    = csrf_meta_tags
+%body
+  %ng-view
+    = yield
